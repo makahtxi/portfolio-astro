@@ -1,8 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import HomeListItem from '../components/HomeListItem';
+import HoteItem from '../components/HomeItem'
 ---
-<Layout title="Welcome to Asto.">
+<Layout title="Pedro Botica">
 	<div class="flex items-center justify-center m-auto w-10/12 bg-white">
 		<div class="h-full flex flex-col items-center mt-72 w-6/12">
 			<div>
@@ -12,13 +12,17 @@ import HomeListItem from '../components/HomeListItem';
 			</div>
 		</div>
 		<div class="h-full flex flex-col items-center mt-72 w-6/12 gap-0">
-			<HomeListItem
+			<HoteItem client:load
+			href="/projects"
 			name="PROJECTS"/>
-			<HomeListItem
+			<HoteItem client:load
+			href="/projects"
 			name="BLOG"/>
-			<HomeListItem
+			<HoteItem client:load
+			href="/projects"
 			name="ABOUT"/>
-			<HomeListItem
+			<HoteItem client:load
+			href="/projects"
 			name="CONTACT"/>
 		</div>
 	</div>

@@ -1,0 +1,14 @@
+---
+import ProjectItem from "../components/ProjectItem"
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Projects">
+    <div class="w-full h-screen flex flex-col items-center">
+        <h1 class="text-4xl font-semibold mt-24 mb-10">Projects Page</h1>
+        <ProjectItem client:load/>
+        <ProjectItem client:load/>
+        <ProjectItem client:load/>
+        <ProjectItem client:load/>
+    </div>    
+</Layout>
