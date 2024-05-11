@@ -6,9 +6,38 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Projects">
     <div class="w-full h-screen flex flex-col items-center">
         <h1 class="text-4xl font-semibold mt-24 mb-10">Projects Page</h1>
-        <ProjectItem client:load/>
-        <ProjectItem client:load/>
-        <ProjectItem client:load/>
-        <ProjectItem client:load/>
+        <ProjectItem client:load
+        name= "UPLING"
+        href= "#"
+        tags= "placeholder"
+        img= "/src/images/Upling.png"
+        color= "#FFFFFF"/>
+        <ProjectItem client:load
+        name="ORBIT OVERTURE"
+        href="#"
+        tags="placeholder"
+        img="/src/images/Orbit.png"
+        color= "#FFFFFF"
+        />
+        <ProjectItem client:load
+        name="BOATY"
+        href="#"
+        tags="placeholder"
+        img="/src/images/Boaty.png"
+        color = "#FF00F2"
+        />
+        <ProjectItem client:load
+        name="PASSPORT"
+        href="#"
+        tags="placeholder"
+        img= "/src/images/Passport.png"
+        color= "#000000"
+        />
+        <ProjectItem client:load
+        name="LAGOS"
+        href="#"
+        tags="placeholder"
+        img= "/src/images/Lagos.png"
+        color= "#232745">
     </div>    
 </Layout>

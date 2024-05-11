@@ -1,6 +1,18 @@
 import { useState } from "react"
+import { StrictMode } from "react"
 
-export default function ProjectItem({name = "ProjectName", href ="#"}  : {name: string, href:string}){
+export default function ProjectItem({
+    name = "ProjectName", href ="#", 
+    tags ="UX/UI, Branding, User Research",
+    color, 
+    img = "src/images/Boaty.png"
+    }  : { 
+    name: string, 
+    href:string, 
+    tags: string, 
+    color: string,
+    img: string
+    }){
 
     const [active, setActive] = useState(false)
 
@@ -10,12 +22,17 @@ export default function ProjectItem({name = "ProjectName", href ="#"}  : {name: 
 
 
     return (
-        <div className="cursor-pointer h-fit bg-contain w-6/12 border-[#575757]" style={{backgroundImage: active ? 'url(https://ujjrahctcfbuydtpemhr.supabase.co/storage/v1/object/public/images/5000ea0e-9629-4f52-9d22-8480cfb26c7a-0.09714969976080301.png?t=2024-05-11T10%3A25%3A48.902Z)': null}} onMouseEnter={changeDiv} onMouseLeave={changeDiv}>
+        <StrictMode>
+        <div className="cursor-pointer h-fit text-center bg-cover w-6/12 border-[#575757] hover:text-left " style={{backgroundImage:active ? `url(${img})`: 'none'}} onMouseEnter={changeDiv} onMouseLeave={changeDiv}>
             <a href={href} className="w-full">
-            <p className=" cursor-pointer text-4xl font-regular p-6 text-center align-middle">{name}</p>
-            <div className={`bg-[#575757] h-1   m-0 ${active ? 'w-full p-[2px]' : 'w-0 '} transition-all duration-300`}> </div>
+            <div className="p-6">
+            <p className={`cursor-pointer text-4xl text-left font-regular align-middle`} style={{color: active ? `${color}` : '#000000'}}>{name}</p>
+            <p className={`cursor-pointer text-2xl font-regular align-middle ${!active && 'hidden'} transition-all duration-300 `} style={{color: `${color}`}}>{tags}</p>
+            </div>
+            <div className={`h-1   m-0 ${active ? 'w-full p-[2px]' : 'w-0 '} transition-all duration-500`} style={{backgroundColor: `${color}`}}> </div>
             </a>
         </div>
+        </StrictMode>
         
     )
 }
