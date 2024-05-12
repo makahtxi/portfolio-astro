@@ -1,0 +1,107 @@
+---
+import ProjectTitle from "../../components/ProjectTitle"
+import Text from "../../components/Text"
+import BigImage from "../../components/BigImage"
+import Featured from "../../components/Featured"
+import Layout from "../../layouts/Layout.astro"
+import Image from "astro/components/Image.astro"
+---
+<Layout title="Upling">
+    <div class="mt-20 m-auto">
+        <ProjectTitle
+        title="Upling"
+        tags= {["ux/ui", "ux research"]}
+        />
+        <Text
+        content= `Upling is a platform to help highschoolers figure out what theyll do once they finish their mandatory education. 
+        It aims to help students gather information on their options for higher education or professional career.`
+        />
+        <div class="mt-14"/>
+        <BigImage
+        img="/Upling/Upling.png"
+        />
+        
+        <div class="m-auto my-20 flex w-10/12 justify-center">
+            <div class="w-1/2 h-1/2">
+                <Image 
+                src="/Upling/problems.png"
+                width="1400"
+                height="788"
+                alt="a"
+                />
+            </div>
+            <div class="w-1/2 h-1/2">
+                <Image 
+                src="/Upling/solutions.png"
+                width="1400"
+                height="788"
+                alt="a"        
+                />
+            </div>
+        </div>
+        <div class="m-auto my-20 w-10/12 flex">
+            <div class="w-1/2 h-1/2">
+            <Image 
+            src="/Upling/Persona.png"
+            width="1400"
+            height="788"
+            alt="a"
+            />
+            </div>
+            <div class="h-1/2 w-1/2">
+            <Image 
+            src="/Upling/Journey.png"
+            width="1400"
+            height="788"
+            alt="a"
+            />
+            </div>
+        </div>
+        <div class="m-auto mt-14 grid grid-cols-2 w-10/12 gap-2 rounded-md">
+            <Image 
+            src="/Upling/screens2.png"
+            width="1400"
+            height="788"
+            alt="a"
+            />
+            <Image 
+            src="/Upling/screens3.png"
+            width="1400"
+            height="788"
+            alt="a"
+            />
+            <Image 
+            src="/Upling/screens4.png"
+            width="1400"
+            height="788"
+            alt="a"
+            />
+            <Image
+            src="/Upling/screens5.png"
+            width="1400"
+            height="788"
+            alt="a"
+            />
+            <Image 
+            src="/Upling/screens6.png"
+            width="1400"
+            height="788"
+            alt="a"
+            />
+            <Image 
+            src="/Upling/screens7.png"
+            width="1400"
+            height="788"
+            alt="a"
+            />
+        </div>
+        <div class="mb-20"></div>
+        <div class="mb-20">
+            <Featured
+            prev="/projects/passport"
+            next="/projects/boaty"
+            />
+        </div>
+        </div>
+</Layout>
+

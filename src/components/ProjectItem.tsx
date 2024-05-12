@@ -22,17 +22,17 @@ export default function ProjectItem({
 
 
     return (
-        <StrictMode>
-        <div className="cursor-pointer h-fit text-center bg-cover w-6/12 border-[#575757] hover:text-left " style={{backgroundImage:active ? `url(${img})`: 'none'}} onMouseEnter={changeDiv} onMouseLeave={changeDiv}>
+        
+        <div className="cursor-pointer h-30 text-center bg-cover w-full border-[#575757] bg-center" style={{backgroundImage:active ? `url(${img})`: 'none'}} onMouseEnter={changeDiv} onMouseLeave={changeDiv}>
             <a href={href} className="w-full">
             <div className="p-6">
-            <p className={`cursor-pointer text-4xl text-left font-regular align-middle`} style={{color: active ? `${color}` : '#000000'}}>{name}</p>
-            <p className={`cursor-pointer text-2xl font-regular align-middle ${!active && 'hidden'} transition-all duration-300 `} style={{color: `${color}`}}>{tags}</p>
+            <p className={`cursor-pointer text-4xl text-left font-semibold align-middle`} style={{color: active ? `${color}` : '#000000'}}>{name}</p>
+            <p className={`cursor-pointer text-lg text-left font-light align-middle ${!active && 'hidden'} transition-all duration-300 `} style={{color: `${color}`}}>{tags}</p>
             </div>
-            <div className={`h-1   m-0 ${active ? 'w-full p-[2px]' : 'w-0 '} transition-all duration-500`} style={{backgroundColor: `${color}`}}> </div>
+            <div className={`h-1   m-0 ${active ? 'w-full p-[2px]' : 'w-0 '} transition-all duration-300`} style={{backgroundColor: `${color}`}}> </div>
             </a>
         </div>
-        </StrictMode>
+        
         
     )
 }

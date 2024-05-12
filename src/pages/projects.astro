@@ -1,43 +1,56 @@
 ---
 import ProjectItem from "../components/ProjectItem"
 import Layout from "../layouts/Layout.astro";
+import Preview from "../components/Preview"
 ---
 
 <Layout title="Projects">
-    <div class="w-full h-screen flex flex-col items-center">
-        <h1 class="text-4xl font-semibold mt-24 mb-10">Projects Page</h1>
-        <ProjectItem client:load
-        name= "UPLING"
-        href= "#"
-        tags= "placeholder"
-        img= "/src/images/Upling.png"
-        color= "#FFFFFF"/>
-        <ProjectItem client:load
-        name="ORBIT OVERTURE"
-        href="#"
-        tags="placeholder"
-        img="/src/images/Orbit.png"
-        color= "#FFFFFF"
-        />
-        <ProjectItem client:load
-        name="BOATY"
-        href="#"
-        tags="placeholder"
-        img="/src/images/Boaty.png"
-        color = "#FF00F2"
-        />
-        <ProjectItem client:load
-        name="PASSPORT"
-        href="#"
-        tags="placeholder"
-        img= "/src/images/Passport.png"
-        color= "#000000"
-        />
-        <ProjectItem client:load
-        name="LAGOS"
-        href="#"
-        tags="placeholder"
-        img= "/src/images/Lagos.png"
-        color= "#232745">
+    <div class="w-full h-screen flex flex-col items-center ">
+        <div class="w-10/12 g flex justify-center border-b-2 border-black mt-24">
+            <h1 class="w-6/12 text-4xl font-semibold  p-6 ">Projects</h1>
+            <div class="w-5/12">
+            </div>
+        </div>
+        
+        <div class="w-10/12 m-0 flex justify-center  mt-4">
+            <div class="w-6/12 flex flex-col">
+            <ProjectItem client:load
+            name= "UPLING"
+            href= "/projects/upling/"
+            tags= "Guiding students to higher ed"
+            img= "/src/images/project-thumbnails/Upling.png"
+            color= "#FFFFFF"/>
+            <ProjectItem client:load
+            name="ORBIT OVERTURE"
+            href="#"
+            tags="AI Music Maker Tool"
+            img="/src/images/project-thumbnails/Orbit.png"
+            color= "#FFFFFF"
+            />
+            <ProjectItem client:load
+            name="BOATY"
+            href="#"
+            tags="Branding for artist"
+            img="/src/images/project-thumbnails/Boaty.png"
+            color = "#FF00F2"
+            />
+            <ProjectItem client:load
+            name="PASSPORT"
+            href="#"
+            tags="Passport app (in the future)"
+            img= "/src/images/project-thumbnails/Passport.png"
+            color= "#000000"
+            />
+            <ProjectItem client:load
+            name="LAGOS"
+            href="#"
+            tags="Wayfinding and urban design"
+            img= "/src/images/project-thumbnails/Lagos.png"
+            color= "#232745">
+            </div>
+            <div class="w-5/12"></div>
+            
+            
+        </div>
     </div>    
 </Layout>

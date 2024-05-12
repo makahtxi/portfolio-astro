@@ -1,10 +1,6 @@
-
-
-
-
 function ProjectTitle(props){
     return(
-        <div className='w-8/12 m-auto mt-20'>
+        <div className='w-8/12 m-auto'>
             <h1 className="text-5xl font-inter font-bold mb-2">{props.title}</h1>
             <div className='flex '>
                 {props.tags.map((x) => 
