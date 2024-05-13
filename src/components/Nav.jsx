@@ -31,7 +31,7 @@ function Nav(){
     return(
         <header className= {`z-10  fixed top-0 w-full h-16 transition-colors duration-300 ${color ? 'lg:bg-violet-100' : 'bg-transparent'}`}>
             <div className="w-full lg:w-8/12 m-auto">
-            <div className={`hidden lg:flex lg:justify-between lg:h-16 lg:max-w-screen-xxl lg:m-auto lg:items-center lg:transition-colors lg:duration-300 lg:${color ? 'bg-violet-100' : 'bg-transparent'}`}>
+            <div className={`hidden lg:flex lg:justify-between lg:h-16 lg:max-w-screen-xxl lg:m-auto lg:items-center lg:transition-colors lg:duration-300 `}>
                 <div className='flex text-gray-700 text-lg'>
                     <a href="/">
                     <h1>Pedro.</h1>

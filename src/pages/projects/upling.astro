@@ -5,9 +5,11 @@ import BigImage from "../../components/BigImage"
 import Featured from "../../components/Featured"
 import Layout from "../../layouts/Layout.astro"
 import Image from "astro/components/Image.astro"
+import Nav from "../../components/Nav"
 ---
-<Layout title="Upling">
-    <div class="mt-20 m-auto">
+<Layout title="Upling"></Layout>
+    <div class="mt-20 m-auto flex flex-col items-center">
+        <Nav/>
         <ProjectTitle
         title="Upling"
         tags= {["ux/ui", "ux research"]}
@@ -16,6 +18,7 @@ import Image from "astro/components/Image.astro"
         content= `Upling is a platform to help highschoolers figure out what theyll do once they finish their mandatory education. 
         It aims to help students gather information on their options for higher education or professional career.`
         />
+        <a href="/projects/test/ "class="w-8/12 text-lg">Read the blog post here</a>
         <div class="mt-14"/>
         <BigImage
         img="/Upling/Upling.png"
@@ -39,8 +42,8 @@ import Image from "astro/components/Image.astro"
                 />
             </div>
         </div>
-        <div class="m-auto my-20 w-10/12 flex">
-            <div class="w-1/2 h-1/2">
+        <div class="m-auto my-20 w-10/12 flex flex-col gap-4">
+            <div class="">
             <Image 
             src="/Upling/Persona.png"
             width="1400"
@@ -48,7 +51,7 @@ import Image from "astro/components/Image.astro"
             alt="a"
             />
             </div>
-            <div class="h-1/2 w-1/2">
+            <div >
             <Image 
             src="/Upling/Journey.png"
             width="1400"
