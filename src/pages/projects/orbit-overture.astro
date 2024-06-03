@@ -1,0 +1,65 @@
+---
+import ProjectTitle from "../../components/ProjectTitle"
+import Text from "../../components/Text"
+import BigImage from "../../components/BigImage"
+import Featured from "../../components/Featured"
+import Layout from "../../layouts/Layout.astro"
+import QuadImage from "../../components/QuadImage"
+import Image from "astro/components/Image.astro"
+import Nav from "../../components/Nav"
+---
+
+<Layout title="Boaty" >
+    <Nav client:load/>
+    <div class='mt-40 m-auto'>
+        <ProjectTitle
+                title="Orbit Overture"
+                tags = {[ "ux/ui design", "user testing", "user research"]}
+        />
+        <Text
+                content="Orbit Overture was developed during my Master's in Interaction Design, aimed at revolutionizing musical creation through artificial intelligence (AI). In an era where AI is transforming various work areas, Orbit seeks to democratize music creation, allowing users to turn ideas into reality without the need for advanced technical knowledge."
+        />
+        <div class='mt-14'/>
+        <BigImage
+                img="/OrbitOverture/OrbitOvertureBanner.png"/>
+        <Text
+                content="In the User Research step of the Orbit project, the focus was on understanding the target audience for the AI-powered music creation tool. Interviews were conducted with five individuals aged 21 to 25, with backgrounds ranging from non-musicians to experienced beat producers. This research aimed to delve into their relationship with music and identify common frustrations, such as the overwhelming complexity of Digital Audio Workstations (DAWs), difficulty in maintaining creative consistency, and the need for additional external software."
+                title="UX Research"/>
+        <BigImage
+                img="/OrbitOverture/UserPainPoints.png"
+                title="Main Pain Points from Interviews"
+        />
+        <BigImage
+                img="/OrbitOverture/UserPersona.png"
+                title="User Persona"
+        />
+        <Text
+                title="User Testing"
+                content="For the user testing and prototyping phase of the Orbit project, a low fidelity prototype was developed using Protopie, to evaluate the interface's usability and functionality. Participants, matching the target user profile of young adults with little to no musical production experience, were tasked with creating music using the prototype. This process involved generating tracks, manipulating keywords to alter sounds, adding extra layers, and sharing the final output."
+        />
+        <BigImage
+                img="/OrbitOverture/Flow.png"
+        />
+        <QuadImage
+                img1="/OrbitOverture/LowFidelity-1.png"
+                img2="/OrbitOverture/LowFidelity-2.png"
+                img3="/OrbitOverture/LowFidelity-3.png"
+                img4="/OrbitOverture/LowFidelity-4.png"
+        />
+        <Text
+                title="Visual Improvements"
+                content="The final prototype of the Orbit project featured heightened visual fidelity, showcasing a harmonious purple color scheme and user-friendly typography. Interactive elements were refined for intuitive use, with responsive design and clear visual feedback. The structure was meticulously laid out for a seamless creative flow, enhanced by distinctive iconography. Overall, these visual enhancements ensured a compelling and accessible user experience in music creation."
+        />
+        <QuadImage class="mb-0"
+                   img1="/OrbitOverture/Screen1.png"
+                   img2="/OrbitOverture/Screen2.png"
+                   img3="/OrbitOverture/Screen3.png"
+                   img4="/OrbitOverture/Screen4.png"
+        />
+        <div class="mb-20"></div>
+        <Featured
+                prev="/projects/lagos"
+                next="/projects/passport"
+        />
+    </div>
+</Layout>

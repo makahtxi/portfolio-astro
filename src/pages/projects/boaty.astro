@@ -1,0 +1,47 @@
+---
+import ProjectTitle from "../../components/ProjectTitle"
+import Text from "../../components/Text"
+import BigImage from "../../components/BigImage"
+import Featured from "../../components/Featured"
+import Layout from "../../layouts/Layout.astro"
+import Image from "astro/components/Image.astro"
+import Nav from "../../components/Nav"
+---
+
+<Layout title="Boaty" >
+    <Nav client:load/>
+    <div class='mt-40 m-auto'>
+        <ProjectTitle
+                title="Branding for Boaty"
+                tags= {["branding", "graphic design"]}
+        />
+        <Text
+                content="Boaty is an independent beatmaker from Portugal. As an artist he draws inspiration from internet culture, anime, and portuguese pop culture and mixes those elements with his own vision and style producing a modern and creative style of trap"
+        />
+        <div class="bg-black mt-14 m-auto w-9/12">
+            <BigImage
+                    img="/Boaty/cover.png"
+            />
+        </div>
+        <Text
+                content="While devoloping Boaty's logo I wanted to create something that would convey the elements that define him as an artist. His creativity, his style, his background, where he came from and to where he is going."
+        />
+        <BigImage
+                img="/Boaty/drawings.png"
+        />
+        <BigImage class="mb-0"
+                  img="/Boaty/logocolors.png"
+        />
+        <Image class=' w-10/12 m-auto mt-16'
+               src="/Boaty/graphics.png"
+               width={1400}
+               height={2062}
+               alt="Images of Boaty's Logo in different color combinations."
+        />
+        <div class="mb-20"></div>
+        <Featured
+                prev="/projects/upling"
+                next="/projects/lagos"
+        />
+    </div>
+</Layout>

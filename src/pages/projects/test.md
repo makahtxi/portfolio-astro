@@ -20,8 +20,8 @@ To create something that helps someone, you first need to know them. This is whe
 To do this we interviewed some students each of us knew and looked to sum up those insights into a persona that would represent the target audience of our group. 
 We also understood that not all students are the same, and don't share the same goals or the same pains. Due to this we ended creating 3 different personas that would represent different audiences for our app.
 
-
-
+![User persona](https://github.com/makahtxi/portfolio-astro/blob/dd2b525f74f4efb850c514446d07993dc81317c0/public/Upling/Persona.png?raw=true)
+![User Journey - Using upling and recommending it](https://github.com/makahtxi/portfolio-astro/blob/dd2b525f74f4efb850c514446d07993dc81317c0/public/Upling/Journey.png?raw=true)
 ## Market Research
 
 One of the advantages of working with a topic that already has many solutions in the market is that there's a lot of resources to learn from. It's possible to see what already exists, what people like and dislike about it. A lot of ground has already been covered and there's no need to reinvent the wheel.
@@ -47,7 +47,20 @@ The navigation for these platforms is all over the place, adding stress to an al
 They are very serious in their presentation and language, not making the students that visit them at ease.
 
 
-## Architecture
+## Designing
+
+We had a pretty good idea of how we wanted Upling to feel like. 
+We wanted it to be fun and easy going so students who used it would feel relaxed about their future.
+We also wanted all the information easily readable and accessible, but we didn't want to present it all once as that can be very overwhelming.
+
+### Features
+
+Something to consider was what features should the app include. We opted to include 
+
+With this in mind we proceeded to design the navigational structure of the app and where everything would be found
+
+![Basic information architecture for Upling](https://github.com/makahtxi/portfolio-astro/blob/22089a9b5bd4144cb9a92cf5803548ccb46974a6/public/Upling/Architecture.png?raw=true)
+
 
 
 
