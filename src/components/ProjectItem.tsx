@@ -1,5 +1,4 @@
 import { useState } from "react"
-import { StrictMode } from "react"
 
 export default function ProjectItem({
     name = "ProjectName", href ="#", 
@@ -23,7 +22,7 @@ export default function ProjectItem({
 
     return (
         
-        <div className="cursor-pointer h-30 text-center bg-cover w-full border-[#575757] bg-center" style={{backgroundImage:active ? `url(${img})`: 'none'}} onMouseEnter={changeDiv} onMouseLeave={changeDiv}>
+        <div className="cursor-pointer h-fit text-center bg-cover w-full border-[#575757] bg-center" style={{backgroundImage:active ? `url(${img})`: 'none'}} onMouseEnter={changeDiv} onMouseLeave={changeDiv}>
             <a href={href} className="w-full">
             <div className="p-6">
             <p className={`cursor-pointer text-4xl text-left font-semibold align-middle`} style={{color: active ? `${color}` : '#000000'}}>{name}</p>
