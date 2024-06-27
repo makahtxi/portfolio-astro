@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Nav";
+import ContactForm from "../components/ContactForm"
+const apiKey = import.meta.env.PUBLIC_KEY
+const serviceID = import.meta.env.PUBLIC_SERVICE_ID
+const template = import.meta.env.PUBLIC_TEMPLATE_ID
+
+---
+
+<Layout title="Contact">
+    <Nav client:load/>
+    <div class="w-full h-screen flex flex-col items-center ">
+        <div class="w-10/12 g flex justify-center border-b-2 border-black mt-24">
+            <h1 class="w-11/12 text-4xl font-semibold py-6 justify-start ">Contact</h1>
+
+        </div>
+        <div class="w-10/12 m-0 flex justify-center mt-4 flex-col lg:flex-row">
+            <div class="lg:w-6/12 w-10/12 flex flex-col justify-center m-auto">
+            <ContactForm client:load
+            apiKey={apiKey}
+            serviceId={serviceID}
+            template={template}></ContactForm>
+            </div>
+            <div class="w-1/12"></div>
+            <div class="lg:w-4/12 w-full mt-10 hidden lg:flex flex-col">
+                <h1 class="my-4 text-2xl font-semibold">Wanna work with me?</h1>
+                <p class="my-2">If you liked my work, my story or just want to tell a quick joke feel free to send me a message using this form.</p>
+                <div class="my-20"></div>
+                <p class="my-4">Alternatively you can reach me by:</p>
+                <p class="my-2"><span>email:</span> pebotica@gmail.com</p>
+                <p class="my-2">phone: (+351) 968879506</p>
+            </div>
+
+
+        </div>
+    </div>
+</Layout>

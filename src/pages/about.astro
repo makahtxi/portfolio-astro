@@ -1,0 +1,43 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Nav";
+import { Image } from 'astro:assets';
+import ContactForm from "../components/ContactForm"
+const apiKey = import.meta.env.PUBLIC_KEY
+const serviceID = import.meta.env.PUBLIC_SERVICE_ID
+const template = import.meta.env.PUBLIC_TEMPLATE_ID
+
+---
+
+<Layout title="About">
+    <Nav client:load/>
+    <div class="w-full h-screen flex flex-col items-center ">
+        <div class="w-10/12 g flex justify-center border-b-2 border-black mt-24">
+            <h1 class="w-11/12 text-4xl font-semibold py-6 justify-start ">About</h1>
+
+        </div>
+        <div class="w-10/12 m-0 flex justify-center mt-4 flex-col lg:flex-row">
+            <div class="lg:w-6/12 w-10/12 flex flex-col justify-center m-auto text-sm text-justify gap-4 mt-10">
+                <p>I’m a UX Designer and a Front-End Developer.</p>
+
+                <p>I first discovered my love for design when I was 13, and I wanted to start a minecraft youtube channel and needed some artwork. I installed photoshop and cinema4D, got myself some textures and whacked away at my first design creation, a youtube banner art for my minecraft channel.<p>
+
+                <p>When I graduated high school I decided to study design at the University of Lisbon, where I discovered my passion for UX/UI/Interaction Design. For me, it was the perfect combination of artistry, science and technology. So I decided to get a masters’ in Interaction Design, which I’m currently writing my thesis for.<p>
+
+                <p>When getting my masters I found out that I didn’t really understand a lot about how to actually build the things I designed. I knew a bit of html and css, and the tiniest bit of javascript, but I had no grasp of how to do most things, even an API request was daunting. So I decided I want to understand how all of it work and started learning web-development. I really liked it, it was like building a lego house, except when you place a block in the wrong place the lego is no longer was a house, it's now a dragon and you have to fix it.<p>
+
+                <p>So here we are, if you liked my story (or my work), feel free to <a href="/contact">contact me</a>. We can discuss design, technology, music, card games or the weather.</p>
+            </div>
+            <div class="w-1/12"></div>
+            <div class="lg:w-4/12 w-full mt-10 hidden lg:flex flex-col">
+            <Image
+            src="/me.jpeg"
+            alt="A picture of me, stunning"
+            width="400"
+            height="400"/>
+            </div>
+
+
+        </div>
+    </div>
+</Layout>
