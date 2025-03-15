@@ -7,9 +7,9 @@ import Layout from "../../layouts/Layout.astro"
 import Image from "astro/components/Image.astro"
 import Nav from "../../components/Nav"
 ---
-<Layout title="Upling"></Layout>
+<Layout title="Upling">
     <div class="mt-20 m-auto flex flex-col items-center">
-        <Nav/>
+        <Nav client:load/>
         <ProjectTitle
         title="Upling"
         tags= {["ux/ui", "ux research"]}
@@ -18,7 +18,7 @@ import Nav from "../../components/Nav"
         content= `Upling is a platform to help highschoolers figure out what theyll do once they finish their mandatory education. 
         It aims to help students gather information on their options for higher education or professional career.`
         />
-        <a href="/projects/test/ "class="w-8/12 text-lg">Read the blog post here</a>
+        <!--<a href="/projects/test/"class="w-8/12 text-lg">Read the blog post here</a>-->
         <div class="mt-14"/>
         <BigImage
         img="/Upling/Upling.png"

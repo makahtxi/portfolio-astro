@@ -50,12 +50,9 @@ They are very serious in their presentation and language, not making the student
 ## Designing
 
 We had a pretty good idea of how we wanted Upling to feel like. 
-We wanted it to be fun and easy going so students who used it would feel relaxed about their future.
-We also wanted all the information easily readable and accessible, but we didn't want to present it all once as that can be very overwhelming.
+We wanted it to be fun and easy going so students who used it would feel relaxed about their future, with all the information easily readable and accessible, but we didn't want to present it all once as that can be very overwhelming.
 
 ### Features
-
-Something to consider was what features should the app include. We opted to include 
 
 With this in mind we proceeded to design the navigational structure of the app and where everything would be found
 
